@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
+import Login from '../Login/Login';
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
       user: {
+        id: 1,
         name: null
       },
       favorites: []
@@ -14,7 +16,7 @@ class App extends Component {
   render () {
     return (
       <div className="App">
-        <h1>Welcome to My Studio Ghibli Fan Page</h1>
+        < Login />
       </div>
     )
   }
