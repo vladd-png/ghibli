@@ -1,6 +1,6 @@
 import React from 'react';
 import './Login.css';
-import Posts from '../Posts/Posts';
+import PostsBox from '../PostsBox/PostsBox';
 import PropTypes from 'prop-types';
 
 export const Login = (props) => {
@@ -14,8 +14,8 @@ export const Login = (props) => {
           <button>Escape The Maze</button>
         </form>
       </div>
-      <div className='home-block'>
-        <Posts />
+      <div>
+        <PostsBox posts={props.posts}/>
       </div>
     </div>
   )
