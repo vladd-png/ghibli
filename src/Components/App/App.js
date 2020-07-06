@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Login from '../Login/Login';
-import Posts from '../Posts/Posts';
 
 class App extends Component {
   constructor() {
@@ -19,8 +18,7 @@ class App extends Component {
   render () {
     return (
       <div className="App">
-        < Login />
-        < Posts eachPost={this.state.posts} />
+        <Login posts={this.state.posts} />
       </div>
     )
   }
