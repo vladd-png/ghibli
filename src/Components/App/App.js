@@ -11,7 +11,7 @@ class App extends Component {
         name: null
       },
       posts: [
-        {id: 2, name: 'BigFan', movie: 'Spirited Away', content: 'I am the biggest Totoro fan around. I even have a Chibi tattoo on my arm. Love it all.'}
+        {id: 2, name: 'BigFan', character: 'The Blue Dragon - Haku River Spirit', content: 'I am the biggest Totoro fan around. I even have a Chibi tattoo on my arm. Love it all.'}
       ]
     }
   }
