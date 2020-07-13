@@ -16,8 +16,9 @@ class Login extends Component {
   handleChange = event => {
     this.setState({ [event.target.name]: event.target.value })
   }
-  submitPost = (posting) => {
-
+  submitPost = () => {
+    this.props.addPost({ id: Math.random(), name: this.state.name, character: this.state.character, content: this.state.content })
+    this.setState({ id: '', name: '', character: '', content: '' })
   }
   render() {
     return (
@@ -32,10 +33,10 @@ class Login extends Component {
           <h3>or Add to Community Posts</h3>
           <form>
             <h2>Say Something About Yourself</h2>
-            <input name='name' type='text' placeholder='Choose A Name' />
-            <input name='character' type='text' placeholder='Tell Us Your Favorite Ghbili Character' />
-            <input name='content' type='text' placeholder='Now Write Anything You Want!' />
-            <button type='submit' onClick={this.submitPost}/>
+            <input name='name' type='text' placeholder='Choose A Name' value={this.state.name} onChange={this.handleChange}/>
+            <input name='character' type='text' placeholder='Tell Us Your Favorite Ghbili Character' value={this.state.character} onChange={this.handleChange}/>
+            <input name='content' type='text' placeholder='Now Write Anything You Want!' value={this.state.content} onChange={this.handleChange}/>
+            <button type='button' onClick={ this.submitPost }/>
           </form>
         </div>
         <div>
