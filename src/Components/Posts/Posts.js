@@ -14,7 +14,6 @@ class Posts extends Component {
     this.newName = `${randomEmoji} ${this.props.name} ${randomEmoji}`;
     return this.newName
   }
-  // small bug - runs every time not just when the post is created
   render () {
     return (
       <div className='single-post'>
