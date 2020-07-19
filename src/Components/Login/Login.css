@@ -1,10 +1,8 @@
 .login {
   text-align: center;
   width: 100%;
-  height: 100vh;
   background-image: url('../../assets/Spirited-2.jpg');
   background-size: cover;
-  margin-top: -10px;
 }
 
 .home-block {
@@ -15,10 +13,41 @@
   margin-left: calc(50% - 150px);
 }
 
-.login-form {
-
-}
-
 h1 {
   margin: 0;
+  float: left;
+}
+
+input {
+  width: 178px;
+  padding: 10px;
+  height: 10px;
+  margin: 10px;
+}
+
+.post-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-input {
+  display: flex;
+  flex-direction: row;
+}
+
+.name-input {
+  color: purple;
+}
+
+.char-input {
+  color: goldenrod;
+}
+
+.cont-input {
+  color: teal;
+  width: 400px;
+  height: 100px;
+  display: block;
 }
