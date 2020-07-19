@@ -19,7 +19,7 @@ class Posts extends Component {
       <div className='single-post'>
         <div className='users-name'>
           <h1>{this.newName}</h1>
-          <h3>{this.props.character}</h3>
+          <h3>is {this.props.character}</h3>
         </div>
         <p>{this.props.content}</p>
       </div>
