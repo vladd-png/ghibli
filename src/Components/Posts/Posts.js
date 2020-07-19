@@ -17,8 +17,10 @@ class Posts extends Component {
   render () {
     return (
       <div className='single-post'>
-        <h1>{this.newName}</h1>
-        <h3>{this.props.character}</h3>
+        <div className='users-name'>
+          <h1>{this.newName}</h1>
+          <h3>is {this.props.character}</h3>
+        </div>
         <p>{this.props.content}</p>
       </div>
     )
